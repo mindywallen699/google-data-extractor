@@ -12,7 +12,7 @@ const API = '&key=XXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 class Extractor extends Component {
 
 	getData = (keyword, location, country) => {
-		let dataURI = `${URI}${keyword}+${location}+${country}${API}`;
+		let dataURI = `${URI}${keyword}+${location}+${country}+${email}+${website}${API}`;
 		let proxyUrl = 'https://cors-anywhere.herokuapp.com/',
 		targetUrl = dataURI
 		fetch(proxyUrl + targetUrl)
